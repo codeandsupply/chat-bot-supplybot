@@ -1,4 +1,2 @@
 node_modules
-.rvmrc
-undefined
-.DS_Store
+.DS_Store*

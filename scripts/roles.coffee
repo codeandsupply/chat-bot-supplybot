@@ -82,4 +82,3 @@ module.exports = (robot) ->
         msg.send getAmbiguousUserText users
       else
         msg.send "I don't know anything about #{name}."
-
