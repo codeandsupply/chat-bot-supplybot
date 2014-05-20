@@ -1,7 +1,6 @@
 {
-  "name":        "hosted-hubot",
-  "version":     "2.5.1",
-
+  "name": "hosted-hubot",
+  "version": "2.5.1",
   "author": "GitHub Inc.",
   "keywords": [
     "github",
@@ -21,25 +20,26 @@
     "url": "https://github.com/github/hubot.git"
   },
   "dependencies": {
-    "hubot":         ">= 2.6.4",
-    "hubot-scripts": ">= 2.5.11",
-    "hubot-hipchat": ">= 2.6.4",
-    "hubot-hipchat-emoticons":  ">=1.3.0",
-    "jenkinsapi": "git://github.com/jkoenig311/node-jenkins-api.git",
-    "ntwitter": "https://github.com/sebhildebrandt/ntwitter/tarball/master",
-    "twit": "latest",
-    "htmlparser": "1.7.6",
-    "soupselect": "0.2.0",
-    "jsdom": "0.2.14",
-    "underscore": "1.3.3",
-    "coffee-script": "~1.6.3",
     "cheerio": "0.10.7",
-    "request": "2.14.0",
+    "coffee-script": "~1.6.3",
+    "htmlparser": "1.7.6",
+    "hubot": ">= 2.6.4",
+    "hubot-hipchat": ">= 2.6.4",
+    "hubot-hipchat-emoticons": ">=1.3.0",
+    "hubot-scripts": ">= 2.5.11",
+    "hubot-slack": "^2.1.0",
+    "jenkinsapi": "git://github.com/jkoenig311/node-jenkins-api.git",
+    "jsdom": "0.2.14",
+    "ntwitter": "https://github.com/sebhildebrandt/ntwitter/tarball/master",
     "pg": "~0.10.2",
+    "request": "2.14.0",
+    "soupselect": "0.2.0",
     "timezone": "0.0.23",
-    "xpath": "0.0.5",
+    "twit": "latest",
+    "underscore": "1.3.3",
+    "xml2js": "0.4.1",
     "xmldom": "0.1.16",
-    "xml2js": "0.4.1"
+    "xpath": "0.0.5"
   },
   "engines": {
     "node": ">= 0.8.x",
