@@ -1,12 +1,6 @@
 # Hubot
 
-This is a version of GitHub's Campfire bot, hubot. He's pretty cool. Carol uses
-this code to run 2 bots: mathbot in TTM's hipchat rooms, and carolshubot, who
-hangs out in #pghrb on freenode.
-
-This version is designed to be deployed on [Heroku][heroku]. This README was generated for you by hubot to help get you started. Definitely update and improve to talk about your own instance, how to use and deploy, what functionality he has, etc!
-
-[heroku]: http://www.heroku.com
+This is a version of GitHub's Campfire bot, hubot. This hubot is designed to work with Slack, and is based on [Hubot-Slack](https://github.com/tinyspeck/hubot-slack)
 
 ### Testing Hubot Locally
 
@@ -31,14 +25,26 @@ Then you can interact with hubot by typing `hubot help`.
     help - Displays all of the help commands that Hubot knows about.
     ...
 
+### Deploying this Hubot to Heroku
+
+- Install [heroku toolbelt](https://toolbelt.heroku.com/)
+- `heroku create name_for_slackbot`
+- `heroku addons:add redistogo:nano`
+- Activate the Hubot service from the integration tab
+- Add config variables displayed in the Setup Inststuctions box
+
+        % heroku config:add HEROKU_URL=http://name_for_slackbot.heroku.com
+        % heroku config:add HUBOT_SLACK_TOKEN=qws9WfahzatpRPKL4WGQGqpBZ
+        % heroku config:add HUBOT_SLACK_TEAM=my_slack_team
+        % heroku config:add HUBOT_SLACK_BOTNAME=slackbot
+
+- Deploy and start the bot:
+
+        % git push heroku master
+        % heroku ps:scale web=1
 
 ### Scripting
 
 Take a look at the scripts in the `./scripts` folder for examples.
 Delete any scripts you think are useless or boring.  Add whatever functionality you
 want hubot to have. Read up on what you can do with hubot in the [Scripting Guide](https://github.com/github/hubot/blob/master/docs/scripting.md).
-
-### Redis Persistence
-
-    $ DATABASE_URL=postgres://localhost:5432/your-database-name bin/hubot
->>>>>>> 41c9431eb79d9e28df1f804d1fea0db63c94496b
