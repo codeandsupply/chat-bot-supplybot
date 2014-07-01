@@ -1,1 +1,1 @@
-web: bin/hubot --adapter $HUBOT_ADAPTER --name supplybot
+web: bin/hubot --adapter irc --name supplybot
