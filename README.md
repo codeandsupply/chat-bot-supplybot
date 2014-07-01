@@ -1,6 +1,6 @@
 # Hubot
 
-This is a version of GitHub's Campfire bot, hubot. This hubot is designed to work with Slack, and is based on [Hubot-Slack](https://github.com/tinyspeck/hubot-slack)
+This is a version of GitHub's Campfire bot, hubot. This hubot is designed to work with IRC, and is based on [Hubot-IRC](https://github.com/nandub/hubot-irc)
 
 ### Testing Hubot Locally
 
@@ -28,15 +28,16 @@ Then you can interact with hubot by typing `hubot help`.
 ### Deploying this Hubot to Heroku
 
 - Install [heroku toolbelt](https://toolbelt.heroku.com/)
-- `heroku create name_for_slackbot`
+- Change the procfile "supplybot" value to your desired hubot display name
+- `heroku create name_for_ircbot`
 - `heroku addons:add redistogo:nano`
 - Activate the Hubot service from the integration tab
 - Add config variables displayed in the Setup Inststuctions box
 
-        % heroku config:add HEROKU_URL=http://name_for_slackbot.heroku.com
-        % heroku config:add HUBOT_SLACK_TOKEN=qws9WfahzatpRPKL4WGQGqpBZ
-        % heroku config:add HUBOT_SLACK_TEAM=my_slack_team
-        % heroku config:add HUBOT_SLACK_BOTNAME=slackbot
+        % heroku config:add HUBOT_IRC_NICK=myhubot
+        % heroku config:add HUBOT_IRC_ROOMS=#ircroom
+        % heroku config:add HUBOT_IRC_SERVER=irc.example.com
+        % heroku config:add HUBOT_IRC_UNFLOOD=true
 
 - Deploy and start the bot:
 
