@@ -42,6 +42,7 @@ Then you can interact with hubot by typing `hubot help`.
 - Deploy and start the bot:
 
         % git push heroku master
+        % heroku addons:add mongolab
         % heroku ps:scale web=1
 
 ### Scripting
