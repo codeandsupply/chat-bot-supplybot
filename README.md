@@ -1,4 +1,6 @@
-# Hubot
+# Supplybot
+
+[ ![Codeship Status for codeandsupply/supplybot](https://www.codeship.io/projects/201a10e0-f564-0131-7f42-6ac409f91479/status)](https://www.codeship.io/projects/28292)
 
 This is a version of GitHub's Campfire bot, hubot. This hubot is designed to work with IRC, and is based on [Hubot-IRC](https://github.com/nandub/hubot-irc)
 
