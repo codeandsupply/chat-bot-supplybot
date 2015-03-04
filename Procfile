@@ -1,1 +1,1 @@
-app: bin/hubot --adapter slack --name supplybot
+app: bin/hubot --adapter irc --name supplybot
