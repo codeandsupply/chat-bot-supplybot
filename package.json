@@ -31,7 +31,7 @@
     "log": "1.4.0",
     "mongodb": "1.4.7",
     "ntwitter": "https://github.com/sebhildebrandt/ntwitter/tarball/master",
-    "pg": "~0.10.2",
+    "pg": "~2.11.2",
     "request": "2.14.0",
     "soupselect": "0.2.0",
     "timezone": "0.0.23",
