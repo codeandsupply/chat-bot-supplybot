@@ -32,7 +32,7 @@
     "mongodb": "1.4.7",
     "ntwitter": "https://github.com/sebhildebrandt/ntwitter/tarball/master",
     "pg": "~0.10.2",
-    "request": "2.14.0",
+    "request": "2.50.0",
     "soupselect": "0.2.0",
     "timezone": "0.0.23",
     "twit": "latest",
@@ -40,10 +40,16 @@
     "xml2js": "0.4.1",
     "xmldom": "0.1.16",
     "xpath": "0.0.5",
-    "hubot-motivate": ">= 0.0.0"
+    "hubot-motivate": ">= 0.0.0",
+    "snyk": "^1.85.0"
   },
   "engines": {
     "node": ">= 0.8.x",
     "npm": ">= 1.1.x"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
